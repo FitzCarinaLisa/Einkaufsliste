@@ -1,0 +1,24 @@
+﻿<Window x:Class="Einkaufsliste.Bearbeiten"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Einkaufsliste"
+        mc:Ignorable="d"
+        Title="Bearbeiten" Height="450" Width="800">
+    <Grid>
+        <Label Margin="279,22,184,268" Content="Produkt aus der Einkaufsliste Bearbeiten"></Label>
+        <Label Margin="74,155,400,220" Content="Produkt"></Label>
+        <TextBox HorizontalAlignment="Left" x:Name="Produkt" Margin="220,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Margin="74,196,333,102" RenderTransformOrigin="-0.942,0.089" Content="Menge"></Label>
+        <TextBox HorizontalAlignment="Left" x:Name="Menge" Margin="220,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
+        <Label Margin="74,240,400,87" Content="Bemerkung"></Label>
+        <TextBox HorizontalAlignment="Left" Height="5" Margin="-754,395,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="4"/>
+        <TextBox HorizontalAlignment="Left" Name="Bezeichnung" Margin="220,249,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="auswählen" Click="auswaehlen" HorizontalAlignment="Left" Margin="484,377,0,0" VerticalAlignment="Top" Width="207"/>
+        <Label Margin="495,118,63,220" Content="" Name="test"></Label>
+        <ListBox HorizontalAlignment="Left" Height="144" Margin="495,168,0,0" Name="bestehende_eintraege" MouseDoubleClick="bestehende_eintraege_MouseDoubleClick" VerticalAlignment="Top" Width="196" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Button Content="Einkaufsliste updaten" Click="update" HorizontalAlignment="Left" Margin="97,377,0,0" VerticalAlignment="Top" Width="200"/>
+
+    </Grid>
+</Window>

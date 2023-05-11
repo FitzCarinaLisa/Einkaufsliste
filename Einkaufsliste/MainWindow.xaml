@@ -1,0 +1,16 @@
+﻿<Window x:Class="Einkaufsliste.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Einkaufsliste"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Einkaufsliste" Margin="311,25,0,217" FontSize="24"/>
+        <Button Content="Bearbeiten" Click="Bearbeiten" Margin="45,175,477,197"/>
+        <Button Content="Hinzufügen" Click="Hinzufügen" Margin="45,298,477,74"/>
+        <Button Content="Senden an" Click="Senden" Margin="482,298,38,71" RenderTransformOrigin="0.498,1.068"/>
+        <Button Content="Löschen" Click="Löschen" Margin="482,175,40,194"/>
+    </Grid>
+</Window>
